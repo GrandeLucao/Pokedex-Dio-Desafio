@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/pokedex.css">    
+    <link rel="stylesheet" href="/assets/css/types.css">    
+    <link rel="stylesheet" href="/assets/css/global.css">    
+</head>
+
+<body>
+
+        <section class="content">
+            <h1>Pokedex</h1>
+
+            <div class="paginationRegion">
+                <button id="kanto" onclick="getRegionClick(this)" type="button">
+                    Kanto
+                </button>
+                <button id="johto" onclick="getRegionClick(this)" type="button">
+                    Johto
+                </button>
+                <button id="hoenn" onclick="getRegionClick(this)" type="button">
+                    Hoenn
+                </button>
+                <button id="sinnoh" onclick="getRegionClick(this)" type="button">
+                    Sinnoh
+                </button>
+                <button id="unova" onclick="getRegionClick(this)" type="button">
+                    Unova
+                </button>
+                <button id="kalos" onclick="getRegionClick(this)" type="button">
+                    Kalos
+                </button>
+                <button id="alola" onclick="getRegionClick(this)" type="button">
+                    Alola
+                </button>
+                <button id="galar" onclick="getRegionClick(this)" type="button">
+                    Galar
+                </button>
+                <button id="paldea" onclick="getRegionClick(this)" type="button">
+                    Paldea
+                </button>
+                <button id="all" onclick="getRegionClick(this)" type="button">
+                    All
+                </button>
+                <button id="all" onclick="clearPkm(this)" type="button">
+                    Clear
+                </button>
+            </div>
+
+            <ol id="pokemonList" class="pokemons"></ol>
+
+            <div class="pagination">
+                <button id="loadMoreButton" type="button">
+                    Load More
+                </button>
+            </div>
+        </section>
+    
+    <script src="/assets/js/pokemon-model.js"></script>
+    <script src="/assets/js/poke-api.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+
+
+</html>
